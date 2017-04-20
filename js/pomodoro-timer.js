@@ -9,6 +9,9 @@
 		min = Math.floor(timeRemaining / 1000 / 60);
 		output = min + ' : ' + sec;
 		elTimer.textContent = output;
+		if (timeRemaining <= 0) {											   //Discontinues function loop when countdown reaches 0
+			clearInterval(displayTimer);
+		}
 	}
 	var displayTimer = setInterval(timerDisplay, 1000); 					   //Continuously updates DOM by repeatedly calling timerDisplay()
 	var timerLength = (function() { 										   //Calculates the length of timer based off user's selection 
