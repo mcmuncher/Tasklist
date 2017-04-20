@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="us-en">
+	<head>
+		<title>Devon's To-Do List</title>
+		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/avara" type="text/css"/>
+		<link href="css/test.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>		
+		<div class="wrapper">
+			<header>
+				<h1>Devon's Agenda</h1>
+				<input id="newTask" type="text" placeholder="Add New Task..." />
+				<select id="tcategory">
+					<option value="misc">Miscellaneous</option>
+					<option value="priority">Priorities</option>
+					<option value="project">Projects</option>
+					<option value="read">Reading</option>
+					<option value="study">Studies</option>
+					<option value="shop">Shopping</option>
+					<option selected="selected">Task Type...</option>
+				</select>
+				<span onclick="newElement()" class="addBtn">Add</span>
+				<div id='demo'>
+					<select id="lengthofTime">
+						<option value="15">15 Minutes</option>
+						<option value="25">25 Minutes</option>
+						<option value="45">45 Minutes</option>
+						<option value="60" selected="selected">One Hour</option>
+					</select>
+					<p id='countdown'></p>
+				</div>
+			</header>
+			<section class="priority">
+				<h2>Priorities</h2>
+				<ul>
+					<li><a href="https://hackernoon.com/how-i-tweaked-pomodoro-technique-for-better-results-in-productivity-bc7a74b6de3a#.fd23fgi8k" target="_blank">Practice Pomodoro Technique</a></li>
+					<li hidden="hidden">Brush Teeth</li>
+					<li>Read</li>
+					<li>Write</li>
+				</ul>
+			<section class="study">	
+				<h2>Studies</h2>
+				<ul>
+					<li><a href="https://harper.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_106646_1&content_id=_4284976_1&mode=reset" target="_blank">
+						Review Calculus</a></li>
+					<li><a href="http://www.harpercollege.edu/mhealy/eco212/macmodules.htm" target="_blank">
+						Complete Macro Course</a></li>
+					<li><a href="https://harper.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_107237_1&content_id=_4317407_1" target="_blank">
+						Write Sociology Essay 2</a></li>
+					<li><a href="https://www.vhlcentral.com/" target="_blank">Online Spanish</a></li>
+				</ul>
+			</section>		
+			<section class="read">
+				<h2>Reading List</h2>
+				<ul>
+					<li>In Progess</li>
+					<ul>
+						<li>HP and the Cursed Child</li>
+						<li>HTML&CSS</li>
+					</ul>
+					<li>Fiction</li>
+					<ul>
+						<li>Life of Pi</li>
+					</ul>
+					<li>Non-Fiction</li>
+					<ul>
+						<li>HTML&CSS</li>
+						<li>Javascript&Jquery</li>
+						<li>MySQL&Javascript</li>
+					</ul>
+				</ul>
+			</section>
+			<section class="project">
+				<h2>Project Ideas</h2>
+				<ul>
+					<li hidden="hidden">Blog</li>
+					<li><a href="https://diyhacking.com/raspberry-pi-web-server/" target="_blank">Pi Web Server</a></li>
+					<li>MemeaMilli</li>
+					<li>Dropshipping</li>
+				</ul>
+			</section>
+			<section class="shop">
+				<h2>Shopping</h2>
+				<ul>
+					<li>xyz</li>
+					<li><a href="">test</a></li>
+				</ul>
+			</section>
+			<section class="misc">
+				<h2>Miscellaneous</h2>
+				<ul>
+					<li>Excercise</li>
+				</ul>
+			</section>
+			<aside>
+				<iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/6969243&amp;color=00aabb&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false"></iframe>
+			</aside>
+		</div><!-- .wrapper -->
+		<script src="js/pomodoro-timer.js"></script>
+	</body>
+</html>

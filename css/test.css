@@ -1,0 +1,39 @@
+header, section, footer, aside, nav, article, figure, figcaption {
+	display: block;
+}
+body {
+	font-family: 'AvaraBold';
+	font-weight: normal;
+	text-align: center;
+	margin: 0px;
+}
+.wrapper {
+	width: 940px;
+	overflow: auto;
+	margin: 20px auto;
+	border: 4px double #000;
+}
+section {
+	width: 100%;
+	float: left;
+}
+section li {
+	clear: left;
+	list-style: none;
+	left: 0;
+	padding: 10px;
+	box-shadow: 0 0 10px #777777;
+	margin: 5px 10px;
+	margin-left: -30px;
+}
+aside {
+	position: fixed;
+	height: 95%;
+	top: 20px;
+	right:5px;
+}
+
+iframe {
+	height: 100%;
+	overflow: hidden;
+}
